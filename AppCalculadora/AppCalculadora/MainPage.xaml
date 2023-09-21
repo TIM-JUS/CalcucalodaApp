@@ -47,7 +47,8 @@
             <!-- Botón de igual -->
             <Button Grid.Row="4" Grid.Column="2" Text="=" Clicked="OnEqualButtonClicked" />
 
-            
+            <!-- Botón de limpiar -->
+            <Button Grid.Row="4" Grid.Column="0" Text="C" Clicked="OnClearButtonClicked" />
         </Grid>
     </StackLayout>
 </ContentPage>
