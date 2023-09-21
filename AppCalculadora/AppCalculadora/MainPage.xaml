@@ -44,6 +44,9 @@
             <Button Grid.Row="3" Grid.Column="3" Text="*" Clicked="OnOperatorButtonClicked" />
             <Button Grid.Row="4" Grid.Column="3" Text="/" Clicked="OnOperatorButtonClicked" />
 
+            <!-- Botón de igual -->
+            <Button Grid.Row="4" Grid.Column="2" Text="=" Clicked="OnEqualButtonClicked" />
+
             
         </Grid>
     </StackLayout>
