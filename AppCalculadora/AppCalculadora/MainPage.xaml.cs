@@ -58,7 +58,13 @@ namespace AppCalculadora
                 currentOperator = "";
             }
         }
-       
+        private void OnClearButtonClicked(object sender, EventArgs e)
+        {
+            currentInput = "";
+            currentOperator = "";
+            result = 0.0;
+            resultLabel.Text = "0";
+        }
 
     }
 }
