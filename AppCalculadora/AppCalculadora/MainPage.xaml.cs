@@ -30,7 +30,35 @@ namespace AppCalculadora
             result = double.Parse(currentInput);
             currentInput = "";
         }
-        
+        private void OnEqualButtonClicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(currentOperator) && !string.IsNullOrEmpty(currentInput))
+            {
+                double secondOperand = double.Parse(currentInput);
+                switch (currentOperator)
+                {
+                    case "+":
+                        result += secondOperand;
+                        break;
+                    case "-":
+                        result -= secondOperand;
+                        break;
+                    case "*":
+                        result *= secondOperand;
+                        break;
+                    case "/":
+                        if (secondOperand != 0)
+                            result /= secondOperand;
+                        else
+                            resultLabel.Text = "Error";
+                        break;
+                }
+                resultLabel.Text = result.ToString();
+                currentInput = "";
+                currentOperator = "";
+            }
+        }
+       
 
     }
 }
