@@ -2,12 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppCalculadora.MainPage"
-              BackgroundColor="White">
+              BackgroundColor="Bisque">
 
-    <StackLayout Padding="20">
-        <Frame BackgroundColor="Blue">
-            <Label x:Name="resultLabel" Text="0" 
-                   FontSize="36"
+    <StackLayout Padding="5">
+        <Frame BackgroundColor="pink">
+            <Label x:Name="resultLabel"
+                   FontFamily="digital-7.ttf#Digital-7 Regular"
+                   Text="Timoteo  " 
+                   FontSize="100"
                    FontAttributes="Bold"
                    HorizontalOptions="End"></Label>
         </Frame>
@@ -27,28 +29,30 @@
             </Grid.ColumnDefinitions>
 
             <!-- Botones de números -->
-            <Button Grid.Row="1" Grid.Column="0" Text="1" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="1" Grid.Column="1" Text="2" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="1" Grid.Column="2" Text="3" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="2" Grid.Column="0" Text="4" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="2" Grid.Column="1" Text="5" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="2" Grid.Column="2" Text="6" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="3" Grid.Column="0" Text="7" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="3" Grid.Column="1" Text="8" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="3" Grid.Column="2" Text="9" Clicked="OnNumberButtonClicked" />
-            <Button Grid.Row="4" Grid.Column="1" Text="0" Clicked="OnNumberButtonClicked" />
+            <Button Grid.Row="1" Grid.Column="0" Text="1" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="1" Grid.Column="1" Text="2" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="1" Grid.Column="2" Text="3" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="2" Grid.Column="0" Text="4" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="2" Grid.Column="1" Text="5" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="2" Grid.Column="2" Text="6" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="3" Grid.Column="0" Text="7" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="3" Grid.Column="1" Text="8" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="3" Grid.Column="2" Text="9" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="4" Grid.Column="1" Text="0" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" />
+            <Button Grid.Row="5" Grid.Column="0" Text="." FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnNumberButtonClicked" FontSize="100" Grid.ColumnSpan="4" />
+            
 
             <!-- Botones de operadores -->
-            <Button Grid.Row="1" Grid.Column="3" Text="+" Clicked="OnOperatorButtonClicked" />
-            <Button Grid.Row="2" Grid.Column="3" Text="-" Clicked="OnOperatorButtonClicked" />
-            <Button Grid.Row="3" Grid.Column="3" Text="*" Clicked="OnOperatorButtonClicked" />
-            <Button Grid.Row="4" Grid.Column="3" Text="/" Clicked="OnOperatorButtonClicked" />
+            <Button Grid.Row="1" Grid.Column="3" Text="+" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnOperatorButtonClicked" FontSize="100" />
+            <Button Grid.Row="2" Grid.Column="3" Text="-" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnOperatorButtonClicked" FontSize="100" />
+            <Button Grid.Row="3" Grid.Column="3" Text="*" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnOperatorButtonClicked" FontSize="100" />
+            <Button Grid.Row="4" Grid.Column="3" Text="/" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnOperatorButtonClicked" FontSize="100" />
 
             <!-- Botón de igual -->
-            <Button Grid.Row="4" Grid.Column="2" Text="=" Clicked="OnEqualButtonClicked" />
+            <Button Grid.Row="4" Grid.Column="2" Text="=" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnEqualButtonClicked" FontSize="100" />
 
             <!-- Botón de limpiar -->
-            <Button Grid.Row="4" Grid.Column="0" Text="C" Clicked="OnClearButtonClicked" />
+            <Button Grid.Row="4" Grid.Column="0" Text="C" FontFamily="digital-7.ttf#Digital-7 Regular" Clicked="OnClearButtonClicked" FontSize="100" />
         </Grid>
     </StackLayout>
 </ContentPage>
