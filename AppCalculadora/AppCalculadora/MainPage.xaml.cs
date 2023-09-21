@@ -23,6 +23,13 @@ namespace AppCalculadora
             currentInput += button.Text;
             resultLabel.Text = currentInput;
         }
+        private void OnOperatorButtonClicked(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            currentOperator = button.Text;
+            result = double.Parse(currentInput);
+            currentInput = "";
+        }
         
 
     }
